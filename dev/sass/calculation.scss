@@ -1,0 +1,108 @@
+.calculation{
+  .container{
+    position: relative;
+  }
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  &.controled-wrapper {
+    margin-bottom: 8px;
+  }
+  &.file-wrapper {
+    padding-top: 42px;
+}
+}
+
+.btn-lg {
+  padding: 16.6px 30px;
+  font-size: 16px;
+}
+
+.file-name{
+    position: absolute;
+    top: 11px;
+    font-size: 15px;
+}
+
+.calculation-row{
+  display: flex;
+  align-items: flex-start;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 126%;
+    margin-bottom: 6px;
+}
+
+input {
+    border-radius: 10px;
+    width: 100% ;
+    padding: 14px 14px;
+    transition: .3s;
+    border: none;
+    @include fieldState;
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 126%;
+    color: #CBCBCB;
+}
+  &:hover{
+    box-shadow: 1px 1px 3px 0 $color-primary;
+}
+  &:focus{
+    box-shadow: 1px 1px 3px 0 $color-secondary;
+  }
+  &:focus-visible{
+    outline: none;
+} 
+  &[type='file']{
+    display: none;
+  }
+}
+
+[type=file] + label{
+  border: 1px dashed #ffffff38;
+  border-radius: 10px;
+  padding: 12px 15px;
+  text-align: center;
+  @extend input;
+}
+
+.calculation-decoration{
+  margin: auto 0px -100px -29px;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 560px;
+  width: 35vw;
+   img{
+    max-width: calc(100% + 46px);
+   }
+}
+
+
+.calculation-form {
+    max-width: 626px;
+    min-width: 626px;
+    background: $bg-secondary;
+    padding: 49px 46px 60px;
+    border-radius: 20px;
+    box-shadow: 15px 5px #0913491f;
+    .col{
+      padding: 0 14px;
+    }
+    .controled-col {
+    padding-top: 18px;
+}
+}
+
+
+

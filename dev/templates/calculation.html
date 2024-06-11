@@ -1,0 +1,75 @@
+<section class="calculation ">
+    <div class="container">
+        <div class="template-title col-lg-7"> 
+            <h2 > Получить рассчет стоимости доставки вашего груза</h2>
+        </div>
+        <div class="calculation-row">
+            <form class="calculation-form">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-wrapper">
+                            <label for="category">Категория товара:</label>
+                            <select name="category" id="category">
+                                <option value="Бытовая техника">Бытовая техника</option>
+                                <option value="Мужские вещи">Мужские вещи</option>
+                                <option value="Женские вещи">Женские вещи</option>
+                                <option value="Детские вещи">Детские вещи</option>
+                                <option value="Товары для дома">Товары для дома</option>
+                            </select>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="calculation-weight">Вес груза (кг):</label>
+                            <input id="calculation-weight" type="number" placeholder="Введите вес"> 
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-wrapper">
+                            <label for="calculation-price">Стоимость груза:</label>
+                            <input id="calculation-price" type="text" placeholder="Введите стоимость">
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="calculation-size">Объем груза (м3):</label>
+                            <input id="calculation-size" type="number" placeholder="Введите объем"> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">
+                    <div class="col"> 
+                        <div class="input-wrapper">
+                            <input id="insurance" type="checkbox" name="terms">
+                            <label for="insurance">Страховка</label>
+                        </div>
+                         <div class="input-wrapper">
+                            <input id="clearance" type="checkbox" name="terms">
+                            <label for="clearance">Таможенное оформление</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-wrapper">
+                            <label for="calculation-code">Код ТН ВЭД:</label>
+                            <input id="calculation-code" type="number" placeholder="Введите код"> 
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="input-wrapper">
+                            <div id="file-name" class="file-name"></div>
+                            <input id="calculation-file" type="file">
+                            <label for="calculation-file">Загрузить фото товара</label>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="row">
+                    <div class="col">
+                        <button type="button" class="btn btn-primary btn-lg">Следующий шаг<img src="assets/img/icon-arrow-left.svg" class="icon" alt="icon"></button>
+                    </div>
+                </div>
+            </form>
+            <div class="calculation-decoration">
+             <img src="assets/img/calculation-decoration.png" class="img-fluid" alt="decoration">
+            </div>
+        </div>
+    </div>
+</section>

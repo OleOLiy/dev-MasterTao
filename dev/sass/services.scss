@@ -1,0 +1,43 @@
+.services{
+    .template-card{
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgb(4 5 17 / 91%) 0%, rgb(88 88 88 / 0%) 100%);
+            z-index: 1;
+        } 
+    .img-box {
+       img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+}
+    &-title,
+    &__description,
+    &__row{
+    z-index: 1;
+}
+    &-title{
+        margin-top: auto;
+        text-align: left;
+    }  
+
+    &__description{
+        margin-bottom: 14px;
+    }
+
+    .template-card__row{
+        margin: initial;
+    }
+}
+}
+
+   

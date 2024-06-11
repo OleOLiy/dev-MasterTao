@@ -1,0 +1,73 @@
+///fonts///
+$font-primary: "ProximaNova";
+$color-primary: #E58D35;
+$color-secondary: #89C249;
+$bg-primary:#282B38;
+$bg-secondary: #363A4D;
+$text-color: #fff;
+$container-padding: 15px;
+$container-mobile-padding: 20px;
+ 
+ 
+$section-margin-lg: 100px;
+$section-mb-margin: 60px;
+
+@mixin fieldState {
+    &:hover {
+        box-shadow: 0px 0px 2px 2px $color-primary;
+    }
+   
+    &:focus {
+        box-shadow: 0px 0px 2px 2px $color-secondary;
+    }
+
+    &:active {
+        box-shadow: 0px 0px 10px 0px $color-secondary;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+@mixin default-bg-lg {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:$section-margin;
+    max-width: 1920px;
+    padding: 90px 85px 100px;
+    position: relative;
+   
+
+    &:before {
+        content: "";
+        border-radius: 20px;
+        position: absolute;
+        left: 42px;
+        right: 42px;
+        top: 0;
+        height: 100%;
+        background-color: $bg-secondary;
+        z-index: -1;
+    }
+
+    &:nth-child(odd) {
+        .template-title {
+            &:after {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+@mixin default-bg {
+    padding: 90px 0 60px;
+    background-color:$bg-secondary;
+
+    &:before {
+        border-radius: 0;
+        left: 0;
+        right: 0;
+    }
+}

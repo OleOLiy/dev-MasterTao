@@ -1,0 +1,28 @@
+.our-company{
+    .container{
+        position: relative;
+    }
+    .template-title{
+        text-align: left;
+        margin-bottom: 41px;
+    h2:after {
+    content: "";
+    display: inline-block;
+    width: 85px;
+    height: 2px;
+    margin: 0px;
+    position: absolute;
+    left: 5%;
+    top: 60px;
+    transform: translate(-50%, 0);
+    background-color: #89C249;
+}
+}
+}
+
+.company-description{
+    max-width: 555px;
+    height: 333px;
+    font-size: 18px;
+}
+

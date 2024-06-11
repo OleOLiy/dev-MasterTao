@@ -1,0 +1,35 @@
+.slider-advantages {
+    margin: -24px 0;
+}
+
+.advantages-item {
+    text-align: center;
+    margin: 24px 0 48px;
+
+}
+
+.advantages__img-wrapper {
+    width: 113px;
+    height: 113px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 22px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+img.advantages__img {
+    background-color: $color-secondary;
+    object-fit: scale-down;
+    border-radius: 50%;
+    width: 93px;
+    height: 93px;
+}
+
+.advantages__title{
+    font-weight: 400;
+    max-width: 200px;
+    margin: 0 auto;
+}
